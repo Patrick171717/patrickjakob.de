@@ -1,5 +1,6 @@
 header {
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     height: 80px;
@@ -11,8 +12,10 @@ header {
     align-items: center;
     justify-content: space-between;
 
+
     img {
         height: 50px;
+        cursor: pointer;
     }
 
     a {
@@ -25,5 +28,21 @@ header {
             color: rgba(255, 255, 255, 0.8);
         }
     }
+
+}
+
+.darkLinks {
+    a {
+        color: black;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.headerDark {
+    background-color: white;
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
 
 }
